@@ -42,8 +42,8 @@ function reverseAllWords(words) {
 }
 
 function countLinuxUsers(users) {
+  let totLinuxUsers = 0;
   if (users === undefined) throw new Error("users is required");
-  totLinuxUsers = 0;
   users.forEach(element => {
     if (element.type ==="Linux") totLinuxUsers++;
   });
