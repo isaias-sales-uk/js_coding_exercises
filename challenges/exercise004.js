@@ -39,11 +39,10 @@ function getLongestSides(triangles) {
   if (!triangles) throw new Error("triangles is required");
 
   return triangles.map(triangle => {
-    return triangle.reduce((total, side) => {
-      if (side > total) total = side;
-      return total;
+    return triangle.reduce((longestSide, side) => {
+      if (side > longestSide) longestSide = side;
+      return longestSide;
     }, 0);
-
   });
 }
 
