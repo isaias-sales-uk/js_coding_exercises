@@ -18,7 +18,7 @@ function getTotalSubjects(people) {
   return people.reduce((acc, curr) => {
     return acc + curr.subjects.length;
   }, 0);
-} 
+}
 
 function checkIngredients(menu, ingredient) {
   if (menu === undefined) throw new Error("menu is required");
@@ -46,7 +46,6 @@ function duplicateNumbers(arr1, arr2) {
   let numDuplicate = [];
   for (let i = 0; i < arr1.length; i++) {
     for (let a = 0; a < arr2.length; a++) {
-
       if (arr1[i] === arr2[a]) {
         if (!numDuplicate.includes(arr1[i])) {
           numDuplicate.push(arr1[i]);
